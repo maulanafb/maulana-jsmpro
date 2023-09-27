@@ -1,12 +1,12 @@
 import React from 'react'
 interface Props {
-    type: string,
-    title: string,
+
+
     query: string,
     category: string
 
 }
-const Header = ({ type, title, query, category }: Props) => {
+const Header = ({ query, category }: Props) => {
     if (query && category) {
         return (
             <h1 className='heading3 self-start text-white-800'>Search Result For "{query}" in <span className='capitalize'>{category}</span></h1>
